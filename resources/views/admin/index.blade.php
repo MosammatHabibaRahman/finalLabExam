@@ -17,7 +17,7 @@
                     <fieldset style="width:200px">
                         <table>
                             <tr>
-                                <td><center><a href="{{route('admin.register')}}">Register Employee</a></center></td>
+                                <td><center><a href="{{route('admin.registerEmp')}}">Register Employee</a></center></td>
                             </tr>
                             <tr>
                                 <td><center><a href="{{route('admin.view')}}">View Employees</a></center></td>
