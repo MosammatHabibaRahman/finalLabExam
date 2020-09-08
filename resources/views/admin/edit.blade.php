@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Update Employee Info</title>
+        <title>Update Employer Info</title>
     </head>
     <body>
         <head>
-            <a href="/admin">Back</a> |
-            <a href="/logout">Logout</a>
+            <a href="{{route('admin.index')}}">Back</a> |
+            <a href="{{route('logout.index')}}">Logout</a>
             <br>
             <br>
             <br>
@@ -18,24 +18,29 @@
             <br>
             <center>
                 <form action="" method="POST">
+                    @csrf
                     <fieldset style="width:270px">
-                        <legend>Update Employee Info</legend>
+                        <legend>Add Employer</legend>
                         <table>
                             <tr>
                                 <td>Name: </td>
-                                <td><input type="text" name="name" value="<%= emp.name %>"></td>
+                                <td><input type="text" name="name" value=""></td>
                             </tr>
                             <tr>
-                                <td>Phone No.: </td>
-                                <td><input type="text" name="phone" value="<%= emp.phone %>"></td>
+                                <td>Company.: </td>
+                                <td><input type="text" name="company" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Contact.: </td>
+                                <td><input type="text" name="contact" value=""></td>
                             </tr>
                             <tr>
                                 <td>Username: </td>
-                                <td><input type="text" name="username" value="<%= emp.username %>"></td>
+                                <td><input type="text" name="username" value=""></td>
                             </tr>
                             <tr>
                                 <td>Password: </td>
-                                <td><input type="password" name="password" value="<%= emp.password %>"></td>
+                                <td><input type="password" name="password" value=""></td>
                             </tr>
                             <tr>
                                 <td colspan="2"><center><input type="submit" name="add" value="Add"> <input type="submit" name="cancel" value="Cancel"></center></td>

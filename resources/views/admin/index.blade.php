@@ -17,10 +17,10 @@
                     <fieldset style="width:200px">
                         <table>
                             <tr>
-                                <td><center><a href="{{route('admin.add')}}">Register Employee</a></center></td>
+                                <td><center><a href="{{route('admin.add')}}">Register Employer</a></center></td>
                             </tr>
                             <tr>
-                                <td><center><a href="{{route('admin.view')}}">View Employees</a></center></td>
+                                <td><center><a href="{{route('admin.view')}}">View Employers</a></center></td>
                             </tr>
                             <tr>
                                 <td><center><a href="{{route('logout.index')}}">Logout</a></center></td>
