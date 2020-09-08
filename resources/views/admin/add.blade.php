@@ -6,7 +6,7 @@
     <body>
         <head>
             <a href="/admin">Back</a> |
-            <a href="/logout">Logout</a>
+            <a href="{{route('logout.index')}}">Logout</a>
             <br>
             <br>
             <br>
@@ -14,10 +14,11 @@
             <br>
             <br>
             <br>
-			      <br>
+			<br>
             <br>
             <center>
                 <form action="" method="POST">
+                    @csrf
                     <fieldset style="width:270px">
                         <legend>Add Employee</legend>
                         <table>
